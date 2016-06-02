@@ -35,9 +35,9 @@
 
 
 // Custom methods
-- (void) rotateTheRecord:(BOOL)animated;
-- (void) stopTheRecord:(BOOL)animated;
-- (void) removeAnimations:(BOOL)animated;
+- (void) rotateTheRecord;
+- (void) stopTheRecord;
+- (void) removeAnimations;
 
 @end
 

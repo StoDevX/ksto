@@ -84,11 +84,14 @@ BOOL inBackground;
         [scratchRecord setNumberOfTapsRequired:1];
         [imageview2 addGestureRecognizer:scratchRecord];
 
-    
         // Show the record with logo image
         if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-            if ([UIScreen mainScreen].bounds.size.height > 568.0) {
-                //move to your iphone6 and beyond
+            if ([UIScreen mainScreen].bounds.size.height >= 736.0) {
+                //move to your iphone6+
+                imageview2.frame = CGRectMake(30, 130, 350, 350);
+            }
+            else if ([UIScreen mainScreen].bounds.size.height == 667.0) {
+                //move to your iphone6
                 imageview2.frame = CGRectMake(15, 130, 350, 350);
             }
             else if ([UIScreen mainScreen].bounds.size.height == 568.0) {
@@ -107,8 +110,12 @@ BOOL inBackground;
     // Show the volume slider
     CGRect frame;
         if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-            if ([UIScreen mainScreen].bounds.size.height > 568.0) {
-                //move to your iphone6 and beyond
+            if ([UIScreen mainScreen].bounds.size.height >= 736.0) {
+                //move to your iphone6+
+                frame = CGRectMake(165.0, 530.0, 200.0, 50.0);
+            }
+            else if ([UIScreen mainScreen].bounds.size.height == 667.0) {
+                //move to your iphone6
                 frame = CGRectMake(145.0, 510.0, 200.0, 50.0);
             }
             else if([UIScreen mainScreen].bounds.size.height == 568.0){
@@ -137,8 +144,12 @@ BOOL inBackground;
         UIImage *playButton = [UIImage imageNamed:@"play.png"];
         imageview.image = playButton;
         if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
-            if ([UIScreen mainScreen].bounds.size.height > 568.0) {
-                //move to your iphone6 and beyond
+            if ([UIScreen mainScreen].bounds.size.height >= 736.0) {
+                //move to your iphone6+
+                imageview.frame = CGRectMake(50, 514, 75, 75);
+            }
+            else if ([UIScreen mainScreen].bounds.size.height == 667.0) {
+                //move to your iphone6
                 imageview.frame = CGRectMake(30, 494, 75, 75);
             }
             else if([UIScreen mainScreen].bounds.size.height == 568.0){
@@ -189,7 +200,7 @@ BOOL inBackground;
 
         [UIApplication sharedApplication].idleTimerDisabled = YES;
     
-        self.nowPlayingToolbar.clipsToBounds = YES;
+        self.nowPlayingToolbar.clipsToBounds = NO;
     
     
         // Observers using local notifications for app activities

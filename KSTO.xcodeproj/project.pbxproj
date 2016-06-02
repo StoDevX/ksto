@@ -33,7 +33,6 @@
 		3AF3D0F91955FCEB001FB1B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF3D0F81955FCEB001FB1B3 /* CFNetwork.framework */; };
 		3AF3D0FB1955FCFB001FB1B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF3D0FA1955FCFB001FB1B3 /* CoreLocation.framework */; };
 		3AF3D0FD1955FD17001FB1B3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF3D0FC1955FD17001FB1B3 /* Security.framework */; };
-		3AF3D0FF1955FD1D001FB1B3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF3D0FE1955FD1D001FB1B3 /* StoreKit.framework */; };
 		3AF3D1011955FD28001FB1B3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF3D1001955FD28001FB1B3 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +87,6 @@
 		3AF3D0F81955FCEB001FB1B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3AF3D0FA1955FCFB001FB1B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3AF3D0FC1955FD17001FB1B3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		3AF3D0FE1955FD1D001FB1B3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3AF3D1001955FD28001FB1B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -99,7 +97,6 @@
 			files = (
 				3A3B8A421A2CEA11005079E5 /* EventKit.framework in Frameworks */,
 				3AF3D1011955FD28001FB1B3 /* SystemConfiguration.framework in Frameworks */,
-				3AF3D0FF1955FD1D001FB1B3 /* StoreKit.framework in Frameworks */,
 				3AF3D0FD1955FD17001FB1B3 /* Security.framework in Frameworks */,
 				3A4D0280194D0CAC00C8B641 /* QuartzCore.framework in Frameworks */,
 				3A6BF8531944ED2A001C89A8 /* MobileCoreServices.framework in Frameworks */,
@@ -261,7 +258,6 @@
 			children = (
 				3A3B8A411A2CEA11005079E5 /* EventKit.framework */,
 				3AF3D1001955FD28001FB1B3 /* SystemConfiguration.framework */,
-				3AF3D0FE1955FD1D001FB1B3 /* StoreKit.framework */,
 				3AF3D0FC1955FD17001FB1B3 /* Security.framework */,
 				3AF3D0FA1955FCFB001FB1B3 /* CoreLocation.framework */,
 				3AF3D0F81955FCEB001FB1B3 /* CFNetwork.framework */,
@@ -330,6 +326,9 @@
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
 							};
 						};
 					};
