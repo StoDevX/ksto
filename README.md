@@ -1,4 +1,4 @@
-##KSTO Radio
+## KSTO Radio
 
 __KSTO Radio__ is a student-run radio station of St. Olaf College in Northfield, Minnesota. The station broadcasts over the airwaves on campus at 93.1 FM. With [this app](https://itunes.apple.com/us/app/ksto/id953916647), you can listen to shows, call-in to the station, see who will broadcast next, and learn the history of our station.
 
