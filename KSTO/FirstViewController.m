@@ -189,7 +189,7 @@ BOOL inBackground;
 
 
         // Where the music is coming from
-        NSURL *streamURL = [NSURL URLWithString:@"http://stolaf-flash.streamguys.net/radio/ksto1.stream/playlist.m3u8"];
+        NSURL *streamURL = [NSURL URLWithString:@"https://cdn.stobcm.com/radio/ksto1.stream/master.m3u8"];
         _streamPlayer = [[MPMoviePlayerController alloc] initWithContentURL:streamURL];
     
         
